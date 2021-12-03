@@ -1,0 +1,140 @@
+.block-views-blocknews-block-1 {
+  .block-title {
+    margin-top: 191px;
+    margin-bottom: 22px;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    &:before, &:after {
+      background-color: grey;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 28%;
+    }
+
+    &::before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    &::after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  }
+
+  .form-group {
+    background: repeating-linear-gradient(-45deg, grey, #fff 1px, #fff 8px);
+
+    .view-filters {
+      width: 1254px;
+      margin: 21px auto 15px;
+
+      .views-exposed-form {
+        .control-label {
+          display: none;
+        }
+
+        .form-text {
+          width: 340px;
+        }
+      }
+    }
+
+    .view-content {
+      width: 1250px;
+      margin-bottom: 80px;
+
+      .views-view-grid {
+        .views-row {
+          .views-col {
+            display: grid;
+            grid-template-columns: auto 78px 45px 100px 150px auto;
+            background-color: white;
+            padding: 20px 17px;
+
+            .views-field-created {
+              grid-column-start: 1;
+              grid-column-end: 2;
+            }
+
+            .views-field-field-picture11 {
+              .field-content {
+                img {
+                  width: 78px;
+                  height: 78px;
+                  margin-bottom: 12px;
+                }
+              }
+            }
+
+            .views-field-created-1 {
+              grid-column-start: 6;
+              grid-column-end: 6;
+              grid-row-start: 1;
+              grid-row-end: 1;
+
+              .field-content {
+                text-transform: uppercase;
+
+                p {
+                  margin-bottom: 13px;
+                }
+              }
+              }
+
+              .views-field-field-title-news {
+                display: block;
+                grid-column-start: 2;
+                grid-column-end: 7;
+                grid-row-start: 2;
+
+                .field-content {
+                  text-transform: uppercase;
+                  font-size: 24px;
+                }
+              }
+
+              .views-field-field-term3 {
+                .field-content {
+                  text-transform: uppercase;
+
+                  a {
+                    text-decoration: none;
+                    font-size: 12px;
+
+                  }
+                }
+              }
+
+              .views-field-body {
+                p {
+                  color: black;
+                  font-size: 11px;
+
+                }
+              }
+
+              .views-field-body {
+                grid-row-end: 4;
+                grid-column-start: 2;
+                grid-column-end: 7;
+              }
+
+              .views-field-view-node {
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 4;
+              }
+
+
+            }
+          }
+        }
+      }
+    }
+  }

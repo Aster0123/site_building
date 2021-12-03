@@ -24,6 +24,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/drupal_slider": "^2.0",
+        "drupal/editor_advanced_link": "^1.9",
         "drupal/empty_page": "^3.0",
         "drupal/flag": "^4.0@beta",
         "drupal/flexslider": "^2.0",
