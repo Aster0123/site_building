@@ -74,7 +74,6 @@
                   }
                 }
               }
-
               .views-field-view-node {
                 .field-content {
                   background-color: #6e9bc6;
@@ -83,17 +82,14 @@
                   display: flex;
                   margin: auto;
 
-                  span {
-                    margin: auto;
-
                     a {
+                      margin: auto;
                       text-transform: uppercase;
                       color: white;
-                      font-size: 12px;
                       text-decoration: none;
                     }
-                  }
                 }
+              }
               }
             }
           }
@@ -101,4 +97,3 @@
       }
     }
   }
-}
