@@ -6,6 +6,8 @@
 @import "projects.scss";
 @import "team.scss";
 @import "news.scss";
+@import "contact.scss";
+
 body {
   margin: 0;
 }
@@ -51,9 +53,13 @@ body {
   padding: 2px 3px;
   margin-right: 9px;
 }
+.ajax-progress{
+  display:none;
+}
 
-
-
+.ajax-progress-throbber{
+  display: none;
+}
 
 
 

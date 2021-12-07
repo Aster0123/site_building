@@ -1,0 +1,104 @@
+.content {
+  display: flex;
+  /*form*/
+  .layout--twocol-section--50-50 {
+    margin: auto;
+    width: 1000px;
+
+    .block-webform-block {
+      .block-title {
+        display: none;
+      }
+
+      .form-item-name {
+        label {
+          display: none;
+        }
+
+        input {
+          border-radius: 0;
+          height: 50px;
+        }
+      }
+
+      .form-item-email {
+        label {
+          display: none;
+        }
+
+        input {
+          border-radius: 0;
+          height: 50px;
+        }
+      }
+
+      .form-item-number- {
+        label {
+          display: none;
+        }
+
+        input {
+          border-radius: 0;
+          height: 50px;
+        }
+      }
+
+      .form-item-message {
+        label {
+          display: none;
+        }
+
+        textarea {
+          height: 234px;
+          max-height: 200px;
+          min-height: 200px;
+          border-radius: 0;
+        }
+      }
+
+      button {
+        background-color: #d33528;
+        height: 50px;
+        width: 150px;
+        border: 1px solid #d33528;
+      }
+    }
+  }
+
+  /*contact*/
+  .block-views-blockcontacts-block-1 {
+    .block-title {
+      display: none;
+    }
+
+    .views-view-grid {
+      .views-row {
+        .views-col {
+          .views-field-title {
+            a {
+              color: black;
+              text-transform: uppercase;
+              text-decoration: none;
+              font-weight: 800;
+              font-size: 19px;
+              letter-spacing: -0.6px;
+            }
+          }
+
+          .views-field {
+            color: black;
+            margin: 1px 0;
+          }
+
+          .views-field-field-map {
+            margin-top: 37px;
+          }
+        }
+      }
+    }
+  }
+
+  /*contact end*/
+}
+
+/*form end*/

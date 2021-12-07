@@ -74,6 +74,7 @@
                   }
                 }
               }
+
               .views-field-view-node {
                 .field-content {
                   background-color: #6e9bc6;
@@ -82,14 +83,13 @@
                   display: flex;
                   margin: auto;
 
-                    a {
-                      margin: auto;
-                      text-transform: uppercase;
-                      color: white;
-                      text-decoration: none;
-                    }
+                  a {
+                    margin: auto;
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+                  }
                 }
-              }
               }
             }
           }
@@ -97,3 +97,19 @@
       }
     }
   }
+}
+
+/*page*/
+.view-display-id-page_1 {
+  .view-content {
+    flex-direction: column;
+
+    .views-row {
+      font-size: 30px;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+  }
+}
+
+/*page end*/
