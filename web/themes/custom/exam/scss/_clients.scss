@@ -1,0 +1,36 @@
+.slick {
+  width: 1200px;
+  margin: auto;
+}
+
+.block-views-blockslider-block-1 {
+  margin-bottom: 158px;
+
+  .block-title {
+    margin-top: 22px;
+    margin-bottom: 65px;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    &:before, &:after {
+      background-color: grey;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 28%;
+    }
+
+    &::before {
+      right: 0.5em;
+      margin-left: -50%;
+    }
+
+    &::after {
+      left: 0.5em;
+      margin-right: -50%;
+    }
+  }
+}
