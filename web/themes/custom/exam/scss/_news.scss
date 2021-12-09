@@ -7,7 +7,7 @@
     text-transform: uppercase;
 
     &:before, &:after {
-      background-color: grey;
+      background-color: #cfcfcf;
       content: '';
       display: inline-block;
       height: 1px;
@@ -93,7 +93,7 @@
 
             .views-field-fieldset {
               padding-left: 20px;
-              border-left: 1px solid;
+              border-left: 1px solid #cfcfcf;
               margin: -82px 0 0 48px;
 
               fieldset {
@@ -139,6 +139,7 @@
                 .views-field-created-1 {
                   margin-left: auto;
                   font-size: 13px;
+                  color: #cfcfcf;
 
                   .field-content {
                     text-transform: uppercase;
@@ -150,7 +151,7 @@
 
             .views-field-fieldset-1 {
               margin: 23px 0 17px 48px;
-              border-left: 1px solid;
+              border-left: 1px solid #cfcfcf;
               padding-left: 20px;
 
               .field-content {
@@ -169,6 +170,10 @@
                         color: white;
                         text-decoration: none;
                       }
+                    }
+
+                    .field-content:hover {
+                      opacity: 0.7;
                     }
                   }
 

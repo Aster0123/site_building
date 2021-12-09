@@ -8,7 +8,7 @@
     font-weight: 700;
 
     &:before, &:after {
-      background-color: grey;
+      background-color: #cfcfcf;
       content: '';
       display: inline-block;
       height: 1px;
@@ -34,10 +34,8 @@
     .view-display-id-block_1 {
       .view-content {
         .views-view-grid {
-          .views-row {
-            column-gap: 28px;
-
-            .views-col {
+          .card-deck {
+            .card {
               .views-field-field-picture10 {
                 .field-content {
                   img {
@@ -62,19 +60,6 @@
                 }
               }
 
-              .views-field-body {
-                .field-content {
-                  p {
-                    text-align: center;
-                    padding: 0 13px;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    margin-bottom: 22px;
-                    color: #cecece;
-                  }
-                }
-              }
-
               .views-field-view-node {
                 .field-content {
                   background-color: #6e9bc6;
@@ -90,6 +75,23 @@
                     text-decoration: none;
                   }
                 }
+
+                .field-content:hover {
+                  opacity: 0.7;
+                }
+              }
+
+              .views-field-body {
+                .field-content {
+                  p {
+                    text-align: center;
+                    padding: 0 13px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin-bottom: 22px;
+                    color: #cecece;
+                  }
+                }
               }
             }
           }
@@ -99,17 +101,39 @@
   }
 }
 
-/*page*/
-.view-display-id-page_1 {
-  .view-content {
-    flex-direction: column;
 
-    .views-row {
-      font-size: 30px;
-      font-weight: 600;
-      margin-left: 10px;
+@media (max-width: 1561px) {
+  .block-views-blockservices-block-1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .block-views-blockservices-block-1 {
+    width: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .block-views-blockservices-block-1 {
+    width: auto;
+
+    .form-group {
+      .view-id-services {
+        .view-content {
+          .card {
+            .views-field-view-node {
+              margin: 0 auto 40px;
+            }
+          }
+        }
+      }
     }
   }
 }
 
-/*page end*/
+@media (max-width: 1030px) {
+  .block-views-blockservices-block-1 {
+    width: auto;
+  }
+}
