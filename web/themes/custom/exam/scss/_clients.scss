@@ -34,3 +34,34 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .block-views-blockslider-block-1 {
+    margin-bottom: 50px;
+  }
+  .slick {
+    width: 900px;
+    margin: auto;
+  }
+}
+@media (max-width: 899px) {
+  .slick {
+    width: 500px;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .slick {
+    width: 319px;
+    margin: auto;
+  }
+}
+@media (max-width: 444px) {
+  .block-views-blockslider-block-1{
+    .block-title {
+      &:before, &:after {
+        width: 20%;
+      }
+    }
+  }
+}

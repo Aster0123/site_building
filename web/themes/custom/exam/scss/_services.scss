@@ -137,3 +137,34 @@
     width: auto;
   }
 }
+@media (max-width: 991px) {
+  .block-views-blockservices-block-1{
+    .block-title {
+      &:before, &:after {
+        width: 27%;
+      }
+    }
+    .form-group {
+      .view-display-id-block_1 {
+        .view-content {
+          .views-view-grid {
+            .card-deck {
+              .card {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 444px) {
+  .block-views-blockservices-block-1{
+    .block-title {
+      &:before, &:after {
+        width: 20%;
+      }
+    }
+  }
+}

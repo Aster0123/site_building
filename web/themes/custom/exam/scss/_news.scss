@@ -50,8 +50,10 @@
       margin-bottom: 80px;
 
       .views-view-grid {
-        .views-row {
-          .views-col {
+        .card-deck {
+          display: flex;
+
+          .card {
             background-color: white;
             padding: 20px 17px;
             width: 50%;
@@ -233,9 +235,138 @@
             }
 
           }
+
+          .card:last-child {
+            margin-right: 0;
+          }
         }
       }
     }
   }
+}
 
+@media (max-width: 1260px) {
+  .block-views-blocknews-block-1 {
+    .form-group {
+      .view-id-news {
+        .view-filters {
+          width: auto;
+          margin: 21px auto 15px 7px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block-views-blocknews-block-1 {
+    .form-group {
+      .view-id-news {
+        .view-filters {
+          width: auto;
+          margin: 11px auto;
+
+          .views-exposed-form {
+            .form-item-field-title-news-value {
+              input {
+                width: 300px;
+              }
+            }
+
+            .form-actions {
+              display: flex;
+
+              button {
+                margin: 0 0 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .block-views-blocknews-block-1 {
+    .block-title {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 1258px) {
+  .block-views-blocknews-block-1 {
+    .form-group {
+      .view-content {
+        width: auto;
+        margin: 0 20px;
+
+        .views-view-grid {
+          .card-deck {
+            display: flex;
+            flex-direction: column;
+
+            .card {
+              margin: 0 auto 20px;
+              height: auto;
+              box-shadow: 3px 5px 16px grey;
+            }
+
+            .card:last-child {
+              margin: 0 auto 20px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 985px) {
+  .block-views-blocknews-block-1 {
+    .form-group {
+      .view-content {
+        .views-view-grid {
+          .card-deck {
+            .card {
+              fieldset {
+                flex-direction: column;
+
+                .views-field-field-proffesion {
+                  margin-left: 4px;
+                }
+
+                .views-field-created-1 {
+                  margin: -147px 0 134px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 636px) {
+  .block-views-blocknews-block-1 {
+    .form-group {
+      .view-content {
+        margin: 0 auto;
+        .views-view-grid {
+          .card-deck {
+            .card {
+              width: 300px;
+            }
+
+            .card:last-child {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
