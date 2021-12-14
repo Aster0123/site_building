@@ -17,6 +17,7 @@ body {
     padding: 0;
   }
 }
+
 .block-title {
   text-align: center;
 }
@@ -24,6 +25,7 @@ body {
 .views-row {
   display: flex;
 }
+
 .fa-twitter {
   font-size: 22px;
   background-color: #7498c8;
@@ -53,12 +55,17 @@ body {
   padding: 2px 3px;
   margin-right: 9px;
 }
-.ajax-progress{
-  display:none;
+
+.ajax-progress {
+  display: none;
 }
 
-.ajax-progress-throbber{
+.ajax-progress-throbber {
   display: none;
+}
+
+#backtotop {
+  background-size: 50px 50px;
 }
 
 @media (min-width: 768px) {

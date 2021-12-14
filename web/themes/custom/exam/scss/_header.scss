@@ -69,6 +69,7 @@
     color: #6e9bc6;
     padding: 30px 0 0 0;
     height: auto;
+    font-weight: 600;
   }
 
   .navbar-text {
@@ -289,6 +290,7 @@ header {
   header {
     .navbar-wrapper {
       margin: 0 auto;
+      width: 100%;
 
       .navbar-header {
         display: flex;
@@ -299,16 +301,31 @@ header {
       }
 
       .navbar-collapse {
+        width: 100%;
+
         .region-navigation-collapsible {
-          display: flex;
-          flex-direction: column;
+          .contextual-region {
+            .navbar-nav {
+              li {
+                a {
+                  padding: 10px 4px;
+                  &:hover:after{
+                    display: none;
+                  }
+                }
+                a:after{
 
-          .block-views-blocksocial-links-block-1 {
-            margin-top: 30px;
-          }
+                  margin-left: -4px;
+                }
+                .is-active:after {
+                 display: none;
+                }
+              }
 
-          .block-search-form-block {
-            margin: 30px auto;
+              .first {
+                padding: 10px 6px 0 6px;
+              }
+            }
           }
         }
       }
@@ -316,40 +333,76 @@ header {
   }
 }
 
-@media (max-width: 862px) {
+@media (max-width: 1095px) {
   header {
     .navbar-wrapper {
       margin: 0 auto;
       flex-direction: column;
+
+      .navbar-collapse {
+        width: 100%;
+
+        .region-navigation-collapsible {
+          margin: 26px auto 23px;
+          display: flex;
+
+          nav {
+            margin: auto;
+          }
+        }
+      }
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 868px) {
   .navbar {
     height: auto;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+    height: 40px;
+    margin: auto;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+    li:first-child:hover {
+      background: no-repeat center/50% url("../images/Homepage-menu.png");
+    }
+  }
+  .collapse.in {
+    display: block !important;
   }
   header {
     .navbar-wrapper {
       width: 100%;
-
-      .navbar-toggle {
-        height: 40px;
-        margin: auto;
-      }
 
       .navbar-collapse {
         padding: 0;
 
         .region-navigation-collapsible {
           margin: 0;
-
-          .block-views-blocksocial-links-block-1 {
-            margin: 0;
-          }
+          display: flex;
+          flex-direction: column;
 
           .block-search-form-block {
-            margin: 0 auto 13px;
+            form {
+              margin: 20px auto;
+            }
           }
 
           .contextual-region {
@@ -396,7 +449,6 @@ header {
         text-align: center;
       }
     }
-
   }
 }
 

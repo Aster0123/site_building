@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/back_to_top": "^2.0",
         "drupal/blazy": "^2.5",
         "drupal/bootstrap": "^3.23",
         "drupal/cheeseburger_menu": "^5.0@beta",

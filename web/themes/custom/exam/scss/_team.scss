@@ -94,6 +94,11 @@
 
                 .field-content {
                   margin: -23px 0 0 45px;
+
+                  a:hover {
+                    color: white;
+                    text-decoration: none;
+                  }
                 }
               }
             }
@@ -112,7 +117,7 @@
     text-transform: uppercase;
 
     &:before, &:after {
-      background-color:  #cfcfcf;
+      background-color: #cfcfcf;
       content: '';
       display: inline-block;
       height: 1px;
@@ -173,6 +178,7 @@
     }
   }
 }
+
 @media (max-width: 444px) {
   .block-views-blockteam-block-1 {
     .block-title {
@@ -183,3 +189,38 @@
   }
 }
 
+@media (max-width: 1239px) {
+  .block-views-blockteam-block-1 {
+    .form-group {
+      .view-display-id-block_1 {
+        .view-content {
+          .views-view-grid {
+            .card-deck {
+              .card {
+                width: 223px;
+                margin-bottom: 20px;
+
+                .views-field-field-photo {
+                  .field-content {
+                    img {
+                      height: 223px;
+                    }
+                  }
+                }
+
+                .views-field-title {
+                  .field-content {
+
+                    a {
+                      font-size: 20px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
